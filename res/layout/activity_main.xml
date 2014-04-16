@@ -1,0 +1,73 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/container"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.hangoverr.MainActivity" >
+
+    <TextView
+        android:id="@+id/textFreq"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/timeFreq" />
+
+    <Button
+        android:id="@+id/menuButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textAsk"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="21dp"
+        android:text="Menu" />
+
+    <Button
+        android:id="@+id/okButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/menuButton"
+        android:layout_marginBottom="21dp"
+        android:layout_marginRight="42dp"
+        android:layout_toRightOf="@+id/textAsk"
+        android:text="OK" />
+
+    <SeekBar
+        android:id="@+id/seekFreq"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textAsk"
+        android:layout_below="@+id/textFreq"
+        android:layout_marginTop="16dp"
+        android:max="120" />
+
+    <TextView
+        android:id="@+id/textAsk"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textFreq"
+        android:layout_below="@+id/seekFreq"
+        android:layout_marginTop="29dp"
+        android:text="@string/timeAsk" />
+
+    <SeekBar
+        android:id="@+id/seekAsk"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/textAsk"
+        android:layout_marginTop="27dp"
+        android:max="240" />
+
+    <TextView
+        android:id="@+id/textGps"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/seekAsk"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="61dp"
+        android:text=" " />
+
+</RelativeLayout>

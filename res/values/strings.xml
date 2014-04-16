@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">HangOverr</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="timeFreq">Pobieraj lokalizację co: </string>
+    <string name="timeAsk">Przypominaj o zdjęciu co:</string>
+
+
+</resources>
